@@ -40,7 +40,7 @@ html {
 
 /* Navbar */
 
-.navbar{
+.navbar {
     box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.1);
 }
 
@@ -975,11 +975,6 @@ footer {
     width: 400px;
 }
 
-.blog .blog-item {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .blog .item {
     width: 400px;
     margin-bottom: 15px;
@@ -1315,9 +1310,14 @@ footer {
         margin-right: 5px;
     }
 
+    .blog .row .blog-item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
-
-
-
-  
+.blog .row .blog-item {
+    display: flex;
+    flex-wrap: nowrap;
+}
