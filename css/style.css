@@ -1310,14 +1310,21 @@ footer {
         margin-right: 5px;
     }
 
-    .blog .row .blog-item {
+    .blog .blog-item {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
     }
 
 }
 
-.blog .row .blog-item {
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+    .blog .blog-item {
+        display: flex;
+        flex-wrap: nowrap !important;
+    }
+}
+
+.blog .blog-item {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
